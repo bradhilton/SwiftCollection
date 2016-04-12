@@ -140,18 +140,6 @@ extension Bridge : ParentInterface {
         return collectionView?.indexPathsForVisibleItems() ?? []
     }
     
-    func supplementaryViewForElementKind(elementKind: String, atIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView {
-        return _collectionView.supplementaryViewForElementKind(elementKind, atIndexPath: indexPath)
-    }
-    
-    func visibleSupplementaryViewsOfKind(elementKind: String) -> [UICollectionReusableView] {
-        return collectionView?.visibleSupplementaryViewsOfKind(elementKind) ?? []
-    }
-    
-    func indexPathsForVisibleSupplementaryElementsOfKind(elementKind: String, inCollection collection: CollectionSource) -> [NSIndexPath] {
-        return collectionView?.indexPathsForVisibleSupplementaryElementsOfKind(elementKind) ?? []
-    }
-    
     func scrollToItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
         collectionView?.scrollToItemAtIndexPath(indexPath, atScrollPosition: scrollPosition, animated: animated)
     }

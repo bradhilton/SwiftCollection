@@ -35,9 +35,6 @@ public protocol ParentInterface : class {
     func cellForItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell?
     var visibleCells: [UICollectionViewCell] { get }
     func indexPathsForVisibleItemsInCollection(collection: CollectionSource) -> [NSIndexPath]
-    func supplementaryViewForElementKind(elementKind: String, atIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView
-    func visibleSupplementaryViewsOfKind(elementKind: String) -> [UICollectionReusableView]
-    func indexPathsForVisibleSupplementaryElementsOfKind(elementKind: String, inCollection collection: CollectionSource) -> [NSIndexPath]
     func scrollToItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
     func insertSections(sections: NSIndexSet, inCollection collection: CollectionSource)
     func deleteSections(sections: NSIndexSet, inCollection collection: CollectionSource)

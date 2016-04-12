@@ -67,14 +67,6 @@ extension SectionSource where Self : CollectionSource, Self : CollectionInterfac
         return _parent.indexPathsForVisibleItemsInCollection(self).map { $0.item }
     }
     
-    func supplementaryViewForElementKind(elementKind: String, atItem item: Int, inSection section: SectionSource) -> UICollectionReusableView {
-        return _parent.supplementaryViewForElementKind(elementKind, atIndexPath: NSIndexPath(item: item), inCollection: self)
-    }
-    
-    func itemsForVisibleSupplementaryElementsOfKind(elementKind: String, inSection section: SectionSource) -> [Int] {
-        return _parent.indexPathsForVisibleSupplementaryElementsOfKind(elementKind, inCollection: self).map { $0.item }
-    }
-    
     func scrollToItem(item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
         parent?.scrollToItemAtIndexPath(NSIndexPath(item: item), inCollection: self, atScrollPosition: scrollPosition, animated: animated)
     }

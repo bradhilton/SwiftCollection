@@ -20,8 +20,6 @@ public protocol CollectionInterface : _Collection {
     func itemForCell(cell: UICollectionViewCell, inSection section: SectionSource) -> Int?
     func cellForItem(item: Int, inSection section: SectionSource) -> UICollectionViewCell?
     func visibleItemsInSection(section: SectionSource) -> [Int]
-    func supplementaryViewForElementKind(elementKind: String, atItem item: Int, inSection section: SectionSource) -> UICollectionReusableView
-    func itemsForVisibleSupplementaryElementsOfKind(elementKind: String, inSection section: SectionSource) -> [Int]
     func scrollToItem(item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
     func insertSection(section: SectionSource)
     func deleteSection(section: SectionSource)
