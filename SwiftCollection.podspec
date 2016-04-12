@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftCollection"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Abstraction Over UICollectionViewDelegate and UICollectionViewDataSource"
   s.description  = <<-DESC
                     SwiftCollection creates an abstraction layer over UICollectionViewDelegate and UICollectionViewDataSource that allows you to compose data representations at the item, section and collection level.
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/bradhilton/SwiftCollection"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Brad Hilton" => "brad@skyvive.com" }
-  s.source       = { :git => "https://github.com/bradhilton/SwiftCollection.git", :tag => "0.1.1" }
+  s.source       = { :git => "https://github.com/bradhilton/SwiftCollection.git", :tag => "0.1.2" }
 
   s.ios.deployment_target = "8.0"
 
