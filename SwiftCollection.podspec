@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   s.source_files  = "SwiftCollection", "SwiftCollection/**/*.{swift,h,m}"
   s.requires_arc = true
   s.dependency 'AssociatedValues', '~> 1.0.3'
+  s.dependency 'OrderedObjectSet', '~> 1.0.0'
 end

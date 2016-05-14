@@ -77,6 +77,4 @@ extension CollectionSource {
         return UICollectionReusableView()
     }
     
-    
-    
 }

@@ -21,12 +21,27 @@
 		A28A52AC1CBC4608006891A3 /* _Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52AB1CBC4608006891A3 /* _Collection.swift */; };
 		A28A52AF1CBC46C3006891A3 /* ParentInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52AE1CBC46C3006891A3 /* ParentInterface.swift */; };
 		A28A52B11CBC49CB006891A3 /* Bridge+Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52B01CBC49CB006891A3 /* Bridge+Interface.swift */; };
-		A28A52B31CBC4DA4006891A3 /* Collection+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52B21CBC4DA4006891A3 /* Collection+Implementation.swift */; };
+		A28A52B31CBC4DA4006891A3 /* CollectionSource+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52B21CBC4DA4006891A3 /* CollectionSource+Implementation.swift */; };
 		A28A52B51CBC5208006891A3 /* SectionSource+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52B41CBC5208006891A3 /* SectionSource+Implementation.swift */; };
 		A28A52B71CBC5291006891A3 /* CollectionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52B61CBC5291006891A3 /* CollectionInterface.swift */; };
 		A28A52B91CBC6497006891A3 /* SectionSource+CollectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52B81CBC6497006891A3 /* SectionSource+CollectionSource.swift */; };
 		A28A52BB1CBC6633006891A3 /* SectionSource+CollectionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52BA1CBC6633006891A3 /* SectionSource+CollectionInterface.swift */; };
 		A28A52BD1CBD3DA1006891A3 /* NSIndexPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A52BC1CBD3DA1006891A3 /* NSIndexPath+Extensions.swift */; };
+		A2D60E5D1CE632B300EDB2A6 /* MultiCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E5C1CE632B300EDB2A6 /* MultiCollection.swift */; };
+		A2D60E5F1CE635A200EDB2A6 /* MultiCollection+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E5E1CE635A200EDB2A6 /* MultiCollection+Implementation.swift */; };
+		A2D60E611CE6842100EDB2A6 /* MultiCollection+Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E601CE6842100EDB2A6 /* MultiCollection+Interface.swift */; };
+		A2D60E651CE6936600EDB2A6 /* SectionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E641CE6936600EDB2A6 /* SectionInterface.swift */; };
+		A2D60E681CE693D400EDB2A6 /* ItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E671CE693D400EDB2A6 /* ItemSource.swift */; };
+		A2D60E6A1CE694AE00EDB2A6 /* _Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E691CE694AE00EDB2A6 /* _Item.swift */; };
+		A2D60E6C1CE694E900EDB2A6 /* ItemSource+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E6B1CE694E900EDB2A6 /* ItemSource+Implementation.swift */; };
+		A2D60E6F1CE69BE000EDB2A6 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E6E1CE69BE000EDB2A6 /* ItemSection.swift */; };
+		A2D60E711CE69CA500EDB2A6 /* ItemSection+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E701CE69CA500EDB2A6 /* ItemSection+Implementation.swift */; };
+		A2D60E731CE69EAE00EDB2A6 /* ItemSection+Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E721CE69EAE00EDB2A6 /* ItemSection+Interface.swift */; };
+		A2D60E761CE6CEEC00EDB2A6 /* ItemSource+SectionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E751CE6CEEC00EDB2A6 /* ItemSource+SectionSource.swift */; };
+		A2D60E781CE6CFE800EDB2A6 /* ItemSource+SectionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E771CE6CFE800EDB2A6 /* ItemSource+SectionInterface.swift */; };
+		A2D60E7B1CE6D1D900EDB2A6 /* SectionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E7A1CE6D1D900EDB2A6 /* SectionCollection.swift */; };
+		A2D60E7D1CE6D28F00EDB2A6 /* SectionCollection+Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E7C1CE6D28F00EDB2A6 /* SectionCollection+Implementation.swift */; };
+		A2D60E7F1CE6D4C700EDB2A6 /* SectionCollection+Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D60E7E1CE6D4C700EDB2A6 /* SectionCollection+Interface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +61,27 @@
 		A28A52AB1CBC4608006891A3 /* _Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Collection.swift; sourceTree = "<group>"; };
 		A28A52AE1CBC46C3006891A3 /* ParentInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentInterface.swift; sourceTree = "<group>"; };
 		A28A52B01CBC49CB006891A3 /* Bridge+Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bridge+Interface.swift"; sourceTree = "<group>"; };
-		A28A52B21CBC4DA4006891A3 /* Collection+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Implementation.swift"; sourceTree = "<group>"; };
+		A28A52B21CBC4DA4006891A3 /* CollectionSource+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionSource+Implementation.swift"; sourceTree = "<group>"; };
 		A28A52B41CBC5208006891A3 /* SectionSource+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SectionSource+Implementation.swift"; sourceTree = "<group>"; };
 		A28A52B61CBC5291006891A3 /* CollectionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionInterface.swift; sourceTree = "<group>"; };
 		A28A52B81CBC6497006891A3 /* SectionSource+CollectionSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SectionSource+CollectionSource.swift"; sourceTree = "<group>"; };
 		A28A52BA1CBC6633006891A3 /* SectionSource+CollectionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SectionSource+CollectionInterface.swift"; sourceTree = "<group>"; };
 		A28A52BC1CBD3DA1006891A3 /* NSIndexPath+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSIndexPath+Extensions.swift"; sourceTree = "<group>"; };
+		A2D60E5C1CE632B300EDB2A6 /* MultiCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiCollection.swift; sourceTree = "<group>"; };
+		A2D60E5E1CE635A200EDB2A6 /* MultiCollection+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MultiCollection+Implementation.swift"; sourceTree = "<group>"; };
+		A2D60E601CE6842100EDB2A6 /* MultiCollection+Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MultiCollection+Interface.swift"; sourceTree = "<group>"; };
+		A2D60E641CE6936600EDB2A6 /* SectionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionInterface.swift; sourceTree = "<group>"; };
+		A2D60E671CE693D400EDB2A6 /* ItemSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSource.swift; sourceTree = "<group>"; };
+		A2D60E691CE694AE00EDB2A6 /* _Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Item.swift; sourceTree = "<group>"; };
+		A2D60E6B1CE694E900EDB2A6 /* ItemSource+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemSource+Implementation.swift"; sourceTree = "<group>"; };
+		A2D60E6E1CE69BE000EDB2A6 /* ItemSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
+		A2D60E701CE69CA500EDB2A6 /* ItemSection+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemSection+Implementation.swift"; sourceTree = "<group>"; };
+		A2D60E721CE69EAE00EDB2A6 /* ItemSection+Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemSection+Interface.swift"; sourceTree = "<group>"; };
+		A2D60E751CE6CEEC00EDB2A6 /* ItemSource+SectionSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemSource+SectionSource.swift"; sourceTree = "<group>"; };
+		A2D60E771CE6CFE800EDB2A6 /* ItemSource+SectionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemSource+SectionInterface.swift"; sourceTree = "<group>"; };
+		A2D60E7A1CE6D1D900EDB2A6 /* SectionCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCollection.swift; sourceTree = "<group>"; };
+		A2D60E7C1CE6D28F00EDB2A6 /* SectionCollection+Implementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SectionCollection+Implementation.swift"; sourceTree = "<group>"; };
+		A2D60E7E1CE6D4C700EDB2A6 /* SectionCollection+Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SectionCollection+Interface.swift"; sourceTree = "<group>"; };
 		D8F96EEB8DC1A420508585F0 /* Pods-SwiftCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollection/Pods-SwiftCollection.release.xcconfig"; sourceTree = "<group>"; };
 		EFE81BF38137BF097E41406F /* libPods-SwiftCollectionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftCollectionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4D6BDA4E1AE2A7AAEC3343 /* Pods_SwiftCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,15 +130,17 @@
 		A28A52761CBC3C3A006891A3 /* SwiftCollection */ = {
 			isa = PBXGroup;
 			children = (
-				A28A52AD1CBC46B4006891A3 /* Parent */,
+				A2D60E801CE6DC7C00EDB2A6 /* NSIndexPath */,
 				A28A52A81CBC45E3006891A3 /* Base */,
 				A28A529F1CBC44B9006891A3 /* Bridge */,
-				A28A529C1CBC446B006891A3 /* UICollectionView */,
-				A28A52991CBC401B006891A3 /* Section */,
 				A28A52961CBC3DBE006891A3 /* Collection */,
+				A2D60E661CE693C300EDB2A6 /* Item */,
+				A28A52AD1CBC46B4006891A3 /* Parent */,
+				A28A52991CBC401B006891A3 /* Section */,
+				A28A529C1CBC446B006891A3 /* UICollectionView */,
 				A28A52791CBC3C3A006891A3 /* Info.plist */,
-				A28A52771CBC3C3A006891A3 /* SwiftCollection.h */,
 				A28A52BC1CBD3DA1006891A3 /* NSIndexPath+Extensions.swift */,
+				A28A52771CBC3C3A006891A3 /* SwiftCollection.h */,
 			);
 			path = SwiftCollection;
 			sourceTree = "<group>";
@@ -116,22 +148,22 @@
 		A28A52961CBC3DBE006891A3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				A28A52971CBC3DD6006891A3 /* CollectionSource.swift */,
-				A28A52B21CBC4DA4006891A3 /* Collection+Implementation.swift */,
-				A28A52B61CBC5291006891A3 /* CollectionInterface.swift */,
+				A2D60E791CE6D1B700EDB2A6 /* SectionCollection */,
+				A2D783491CE60DE8007C76C7 /* CollectionInterface */,
+				A2D7834A1CE60DF6007C76C7 /* CollectionSource */,
+				A2D783481CE60DDD007C76C7 /* MultiCollection */,
 			);
-			name = Collection;
+			path = Collection;
 			sourceTree = "<group>";
 		};
 		A28A52991CBC401B006891A3 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				A28A529A1CBC4026006891A3 /* SectionSource.swift */,
-				A28A52B41CBC5208006891A3 /* SectionSource+Implementation.swift */,
-				A28A52B81CBC6497006891A3 /* SectionSource+CollectionSource.swift */,
-				A28A52BA1CBC6633006891A3 /* SectionSource+CollectionInterface.swift */,
+				A2D60E6D1CE69BD000EDB2A6 /* ItemSection */,
+				A2D60E631CE6935400EDB2A6 /* SectionInterface */,
+				A2D60E621CE6934B00EDB2A6 /* SectionSource */,
 			);
-			name = Section;
+			path = Section;
 			sourceTree = "<group>";
 		};
 		A28A529C1CBC446B006891A3 /* UICollectionView */ = {
@@ -139,28 +171,29 @@
 			children = (
 				A28A529D1CBC4488006891A3 /* UICollectionView+Collection.swift */,
 			);
-			name = UICollectionView;
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		A28A529F1CBC44B9006891A3 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				A28A52A01CBC44C4006891A3 /* Bridge.swift */,
+				A28A52A61CBC459C006891A3 /* Bridge+DataSource.swift */,
 				A28A52A21CBC4583006891A3 /* Bridge+Delegate.swift */,
 				A28A52A41CBC458E006891A3 /* Bridge+FlowLayout.swift */,
-				A28A52A61CBC459C006891A3 /* Bridge+DataSource.swift */,
 				A28A52B01CBC49CB006891A3 /* Bridge+Interface.swift */,
+				A28A52A01CBC44C4006891A3 /* Bridge.swift */,
 			);
-			name = Bridge;
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 		A28A52A81CBC45E3006891A3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A28A52A91CBC45FD006891A3 /* _Section.swift */,
 				A28A52AB1CBC4608006891A3 /* _Collection.swift */,
+				A2D60E691CE694AE00EDB2A6 /* _Item.swift */,
+				A28A52A91CBC45FD006891A3 /* _Section.swift */,
 			);
-			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		A28A52AD1CBC46B4006891A3 /* Parent */ = {
@@ -168,7 +201,99 @@
 			children = (
 				A28A52AE1CBC46C3006891A3 /* ParentInterface.swift */,
 			);
-			name = Parent;
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		A2D60E621CE6934B00EDB2A6 /* SectionSource */ = {
+			isa = PBXGroup;
+			children = (
+				A28A52BA1CBC6633006891A3 /* SectionSource+CollectionInterface.swift */,
+				A28A52B81CBC6497006891A3 /* SectionSource+CollectionSource.swift */,
+				A28A52B41CBC5208006891A3 /* SectionSource+Implementation.swift */,
+				A28A529A1CBC4026006891A3 /* SectionSource.swift */,
+			);
+			path = SectionSource;
+			sourceTree = "<group>";
+		};
+		A2D60E631CE6935400EDB2A6 /* SectionInterface */ = {
+			isa = PBXGroup;
+			children = (
+				A2D60E641CE6936600EDB2A6 /* SectionInterface.swift */,
+			);
+			path = SectionInterface;
+			sourceTree = "<group>";
+		};
+		A2D60E661CE693C300EDB2A6 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				A2D60E741CE6A23D00EDB2A6 /* ItemSource */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		A2D60E6D1CE69BD000EDB2A6 /* ItemSection */ = {
+			isa = PBXGroup;
+			children = (
+				A2D60E701CE69CA500EDB2A6 /* ItemSection+Implementation.swift */,
+				A2D60E721CE69EAE00EDB2A6 /* ItemSection+Interface.swift */,
+				A2D60E6E1CE69BE000EDB2A6 /* ItemSection.swift */,
+			);
+			path = ItemSection;
+			sourceTree = "<group>";
+		};
+		A2D60E741CE6A23D00EDB2A6 /* ItemSource */ = {
+			isa = PBXGroup;
+			children = (
+				A2D60E6B1CE694E900EDB2A6 /* ItemSource+Implementation.swift */,
+				A2D60E771CE6CFE800EDB2A6 /* ItemSource+SectionInterface.swift */,
+				A2D60E751CE6CEEC00EDB2A6 /* ItemSource+SectionSource.swift */,
+				A2D60E671CE693D400EDB2A6 /* ItemSource.swift */,
+			);
+			path = ItemSource;
+			sourceTree = "<group>";
+		};
+		A2D60E791CE6D1B700EDB2A6 /* SectionCollection */ = {
+			isa = PBXGroup;
+			children = (
+				A2D60E7A1CE6D1D900EDB2A6 /* SectionCollection.swift */,
+				A2D60E7C1CE6D28F00EDB2A6 /* SectionCollection+Implementation.swift */,
+				A2D60E7E1CE6D4C700EDB2A6 /* SectionCollection+Interface.swift */,
+			);
+			name = SectionCollection;
+			sourceTree = "<group>";
+		};
+		A2D60E801CE6DC7C00EDB2A6 /* NSIndexPath */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NSIndexPath;
+			sourceTree = "<group>";
+		};
+		A2D783481CE60DDD007C76C7 /* MultiCollection */ = {
+			isa = PBXGroup;
+			children = (
+				A2D60E5E1CE635A200EDB2A6 /* MultiCollection+Implementation.swift */,
+				A2D60E601CE6842100EDB2A6 /* MultiCollection+Interface.swift */,
+				A2D60E5C1CE632B300EDB2A6 /* MultiCollection.swift */,
+			);
+			path = MultiCollection;
+			sourceTree = "<group>";
+		};
+		A2D783491CE60DE8007C76C7 /* CollectionInterface */ = {
+			isa = PBXGroup;
+			children = (
+				A28A52B61CBC5291006891A3 /* CollectionInterface.swift */,
+			);
+			path = CollectionInterface;
+			sourceTree = "<group>";
+		};
+		A2D7834A1CE60DF6007C76C7 /* CollectionSource */ = {
+			isa = PBXGroup;
+			children = (
+				A28A52B21CBC4DA4006891A3 /* CollectionSource+Implementation.swift */,
+				A28A52971CBC3DD6006891A3 /* CollectionSource.swift */,
+			);
+			path = CollectionSource;
 			sourceTree = "<group>";
 		};
 		E7E2725B24D48F2660A1488A /* Frameworks */ = {
@@ -296,22 +421,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28A52BB1CBC6633006891A3 /* SectionSource+CollectionInterface.swift in Sources */,
+				A2D60E5F1CE635A200EDB2A6 /* MultiCollection+Implementation.swift in Sources */,
 				A28A52A31CBC4583006891A3 /* Bridge+Delegate.swift in Sources */,
 				A28A52A11CBC44C4006891A3 /* Bridge.swift in Sources */,
 				A28A52A51CBC458E006891A3 /* Bridge+FlowLayout.swift in Sources */,
+				A2D60E7B1CE6D1D900EDB2A6 /* SectionCollection.swift in Sources */,
+				A2D60E6A1CE694AE00EDB2A6 /* _Item.swift in Sources */,
+				A2D60E761CE6CEEC00EDB2A6 /* ItemSource+SectionSource.swift in Sources */,
+				A2D60E731CE69EAE00EDB2A6 /* ItemSection+Interface.swift in Sources */,
+				A2D60E6F1CE69BE000EDB2A6 /* ItemSection.swift in Sources */,
 				A28A52B71CBC5291006891A3 /* CollectionInterface.swift in Sources */,
-				A28A52B31CBC4DA4006891A3 /* Collection+Implementation.swift in Sources */,
+				A2D60E7F1CE6D4C700EDB2A6 /* SectionCollection+Interface.swift in Sources */,
+				A28A52B31CBC4DA4006891A3 /* CollectionSource+Implementation.swift in Sources */,
 				A28A529B1CBC4026006891A3 /* SectionSource.swift in Sources */,
 				A28A52B51CBC5208006891A3 /* SectionSource+Implementation.swift in Sources */,
 				A28A52B11CBC49CB006891A3 /* Bridge+Interface.swift in Sources */,
+				A2D60E781CE6CFE800EDB2A6 /* ItemSource+SectionInterface.swift in Sources */,
+				A2D60E6C1CE694E900EDB2A6 /* ItemSource+Implementation.swift in Sources */,
 				A28A52BD1CBD3DA1006891A3 /* NSIndexPath+Extensions.swift in Sources */,
 				A28A52A71CBC459C006891A3 /* Bridge+DataSource.swift in Sources */,
 				A28A52AF1CBC46C3006891A3 /* ParentInterface.swift in Sources */,
+				A2D60E611CE6842100EDB2A6 /* MultiCollection+Interface.swift in Sources */,
 				A28A52AA1CBC45FD006891A3 /* _Section.swift in Sources */,
+				A2D60E5D1CE632B300EDB2A6 /* MultiCollection.swift in Sources */,
 				A28A52981CBC3DD6006891A3 /* CollectionSource.swift in Sources */,
+				A2D60E651CE6936600EDB2A6 /* SectionInterface.swift in Sources */,
 				A28A52AC1CBC4608006891A3 /* _Collection.swift in Sources */,
 				A28A529E1CBC4488006891A3 /* UICollectionView+Collection.swift in Sources */,
+				A2D60E7D1CE6D28F00EDB2A6 /* SectionCollection+Implementation.swift in Sources */,
 				A28A52B91CBC6497006891A3 /* SectionSource+CollectionSource.swift in Sources */,
+				A2D60E711CE69CA500EDB2A6 /* ItemSection+Implementation.swift in Sources */,
+				A2D60E681CE693D400EDB2A6 /* ItemSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
