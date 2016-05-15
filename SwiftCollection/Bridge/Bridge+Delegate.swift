@@ -8,7 +8,6 @@
 
 extension Bridge : UICollectionViewDelegate {
     
-    
     func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
         return _collection.shouldHighlightItemAtIndexPath(indexPath)
     }

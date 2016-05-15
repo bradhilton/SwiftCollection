@@ -8,7 +8,6 @@
 
 extension Bridge : UICollectionViewDelegateFlowLayout {
     
-    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return _collection.sizeForItemAtIndexPath(indexPath)
     }
