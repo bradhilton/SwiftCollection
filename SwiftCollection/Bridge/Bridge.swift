@@ -18,6 +18,7 @@ class Bridge : NSObject {
         self.collection = collection
         self.collectionView?.dataSource = self
         self.collectionView?.delegate = self
+        self.collection?.parent = self
     }
     
     init(collectionView: UICollectionView) {
