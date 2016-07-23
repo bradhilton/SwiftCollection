@@ -8,38 +8,8 @@
 
 extension MultiCollection {
     
-    public var collectionViewLayout: UICollectionViewLayout {
-        get {
-            return _parent.collectionViewLayout
-        }
-        set {
-            parent?.collectionViewLayout = newValue
-        }
-    }
-    
-    public var backgroundView: UIView? {
-        get {
-            return parent?.backgroundView
-        }
-        set {
-            parent?.backgroundView = newValue
-        }
-    }
-    
-    public func registerClass(cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String) {
-        parent?.registerClass(cellClass, forCellWithReuseIdentifier: identifier)
-    }
-    
-    public func registerNib(nib: UINib?, forCellWithReuseIdentifier identifier: String) {
-        parent?.registerNib(nib, forCellWithReuseIdentifier: identifier)
-    }
-    
-    public func registerClass(viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String) {
-        parent?.registerClass(viewClass, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: identifier)
-    }
-    
-    public func registerNib(nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String) {
-        parent?.registerNib(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: identifier)
+    public var collectionView: UICollectionView? {
+        return parent?.collectionView
     }
     
     public func dequeueReusableCellWithReuseIdentifier(identifier: String, forIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell {
@@ -48,24 +18,6 @@ extension MultiCollection {
     
     public func dequeueReusableSupplementaryViewOfKind(elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView {
         return _parent.dequeueReusableSupplementaryViewOfKind(elementKind, withReuseIdentifier: identifier, forIndexPath: indexPathFromCollection(collection, indexPath: indexPath), inCollection: self)
-    }
-    
-    public var allowsSelection: Bool {
-        get {
-            return _parent.allowsSelection
-        }
-        set {
-            parent?.allowsSelection = newValue
-        }
-    }
-    
-    public var allowsMultipleSelection: Bool {
-        get {
-            return _parent.allowsMultipleSelection
-        }
-        set {
-            parent?.allowsMultipleSelection = newValue
-        }
     }
     
     public func indexPathsForSelectedItemsInCollection(collection: CollectionSource) -> [NSIndexPath]? {
@@ -78,30 +30,6 @@ extension MultiCollection {
     
     public func deselectItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, animated: Bool) {
         parent?.deselectItemAtIndexPath(indexPathFromCollection(collection, indexPath: indexPath), inCollection: self, animated: animated)
-    }
-    
-    public func reloadData() {
-        parent?.reloadData()
-    }
-    
-    public func setCollectionViewLayout(layout: UICollectionViewLayout, animated: Bool) {
-        parent?.setCollectionViewLayout(layout, animated: animated)
-    }
-    
-    public func setCollectionViewLayout(layout: UICollectionViewLayout, animated: Bool, completion: ((Bool) -> Void)?) {
-        parent?.setCollectionViewLayout(layout, animated: animated, completion: completion)
-    }
-    
-    public func startInteractiveTransitionToCollectionViewLayout(layout: UICollectionViewLayout, completion: UICollectionViewLayoutInteractiveTransitionCompletion?) -> UICollectionViewTransitionLayout {
-        return _parent.startInteractiveTransitionToCollectionViewLayout(layout, completion: completion)
-    }
-    
-    public func finishInteractiveTransition() {
-        parent?.finishInteractiveTransition()
-    }
-    
-    public func cancelInteractiveTransition() {
-        parent?.cancelInteractiveTransition()
     }
     
     public func numberOfSectionsInCollection(collection: CollectionSource) -> Int {
@@ -130,10 +58,6 @@ extension MultiCollection {
     
     public func cellForItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell? {
         return parent?.cellForItemAtIndexPath(indexPathFromCollection(collection, indexPath: indexPath), inCollection: self)
-    }
-    
-    public var visibleCells: [UICollectionViewCell] {
-        return parent?.visibleCells ?? []
     }
     
     public func indexPathsForVisibleItemsInCollection(collection: CollectionSource) -> [NSIndexPath] {
@@ -174,10 +98,6 @@ extension MultiCollection {
     
     public func moveItemAtIndexPath(indexPath: NSIndexPath, toIndexPath newIndexPath: NSIndexPath, inCollection collection: CollectionSource) {
         parent?.moveItemAtIndexPath(indexPathFromCollection(collection, indexPath: indexPath), toIndexPath: indexPathFromCollection(collection, indexPath: newIndexPath), inCollection: self)
-    }
-    
-    public func performBatchUpdates(updates: (() -> Void)?, completion: ((Bool) -> Void)?) {
-        parent?.performBatchUpdates(updates, completion: completion)
     }
     
 }

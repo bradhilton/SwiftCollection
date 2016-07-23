@@ -28,7 +28,7 @@ extension SectionSource {
     // Flow Layout Delegate
     
     private var flowLayout: UICollectionViewFlowLayout {
-        return collection?.parent?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
+        return collection?.parent?.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
     }
     
     public func sizeForItem(item: Int) -> CGSize {

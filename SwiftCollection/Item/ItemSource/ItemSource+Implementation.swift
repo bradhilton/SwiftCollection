@@ -28,7 +28,7 @@ extension ItemSource {
     // Flow Layout Delegate
     
     private var flowLayout: UICollectionViewFlowLayout {
-        return section?.collection?.parent?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
+        return section?.collection?.parent?.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
     }
     
     public var size: CGSize { return flowLayout.itemSize }

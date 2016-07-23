@@ -32,7 +32,7 @@ extension CollectionSource {
     // Flow Layout Delegate
     
     private var flowLayout: UICollectionViewFlowLayout {
-        return parent?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
+        return parent?.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
     }
     
     public func sizeForItemAtIndexPath(indexPath: NSIndexPath) -> CGSize {

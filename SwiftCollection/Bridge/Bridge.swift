@@ -26,10 +26,6 @@ class Bridge : NSObject {
         self.collectionView = collectionView
     }
     
-    var _collectionView: UICollectionView {
-        return collectionView ?? UICollectionView()
-    }
-    
     class EmptyCollection : CollectionSource {}
     
     var _collection: CollectionSource {
