@@ -6,6 +6,8 @@
 //  Copyright © 2016 Brad Hilton. All rights reserved.
 //
 
+import AssociatedValues
+
 extension SectionSource {
     
     // Delegate
@@ -36,23 +38,48 @@ extension SectionSource {
     }
     
     public var inset: UIEdgeInsets {
-        return flowLayout.sectionInset
+        get {
+            return getAssociatedValueForProperty("inset", ofObject: self) ?? flowLayout.sectionInset
+        }
+        set {
+            setAssociatedValue(newValue, forProperty: "inset", ofObject: self)
+        }
     }
     
     public var minimumLineSpacing: CGFloat {
-        return flowLayout.minimumLineSpacing
+        get {
+            return getAssociatedValueForProperty("minimumLineSpacing", ofObject: self) ?? flowLayout.minimumLineSpacing
+        }
+        set {
+            setAssociatedValue(newValue, forProperty: "minimumLineSpacing", ofObject: self)
+        }
     }
     
     public var minimumInteritemSpacing: CGFloat {
-        return flowLayout.minimumInteritemSpacing
+        get {
+            return getAssociatedValueForProperty("minimumInteritemSpacing", ofObject: self) ?? flowLayout.minimumInteritemSpacing
+        }
+        set {
+            setAssociatedValue(newValue, forProperty: "minimumInteritemSpacing", ofObject: self)
+        }
     }
     
     public var referenceSizeForHeader: CGSize {
-        return flowLayout.headerReferenceSize
+        get {
+            return getAssociatedValueForProperty("referenceSizeForHeader", ofObject: self) ?? flowLayout.headerReferenceSize
+        }
+        set {
+            setAssociatedValue(newValue, forProperty: "referenceSizeForHeader", ofObject: self)
+        }
     }
     
     public var referenceSizeForFooter: CGSize {
-        return flowLayout.footerReferenceSize
+        get {
+            return getAssociatedValueForProperty("referenceSizeForFooter", ofObject: self) ?? flowLayout.footerReferenceSize
+        }
+        set {
+            setAssociatedValue(newValue, forProperty: "referenceSizeForFooter", ofObject: self)
+        }
     }
     
     // Data Source
