@@ -12,7 +12,10 @@ extension SectionSource where Self : CollectionSource, Self : CollectionInterfac
     
     public var collection: CollectionInterface? {
         get {
-            return getAssociatedValueForProperty("collection", ofObject: self) ?? self
+            guard let collection: CollectionInterface = getAssociatedValueForProperty("collection", ofObject: self) else {
+                return self
+            }
+            return collection
         }
         set {
             setWeakAssociatedValue(newValue as? AnyObject, forProperty: "collection", ofObject: self)
