@@ -12,57 +12,57 @@ extension ItemSource where Self : SectionSource, Self : SectionInterface {
     
     public var section: SectionInterface? {
         get {
-            guard let section: SectionInterface = getAssociatedValueForProperty("section", ofObject: self) else {
+            guard let section: SectionInterface = getAssociatedValue(key: "section", object: self) else {
                 return self
             }
             return section
         }
         set {
-            setWeakAssociatedValue(newValue as? AnyObject, forProperty: "section", ofObject: self)
+            set(weakAssociatedValue: newValue as AnyObject, key: "section", object: self)
         }
     }
     
-    public func dequeueReusableCellWithReuseIdentifier(identifier: String, forItem item: ItemSource) -> UICollectionViewCell {
+    public func dequeueReusableCellWithReuseIdentifier(_ identifier: String, forItem item: ItemSource) -> UICollectionViewCell {
         return _collection.dequeueReusableCellWithReuseIdentifier(identifier, forItem: 0, inSection: self)
     }
     
-    public func dequeueReusableSupplementaryViewOfKind(elementKind: String, withReuseIdentifier identifier: String, forItem item: ItemSource) -> UICollectionReusableView {
+    public func dequeueReusableSupplementaryViewOfKind(_ elementKind: String, withReuseIdentifier identifier: String, forItem item: ItemSource) -> UICollectionReusableView {
         return _collection.dequeueReusableSupplementaryViewOfKind(elementKind, withReuseIdentifier: identifier, forItem: 0, inSection: self)
     }
     
-    public func selectItem(item: ItemSource?, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+    public func selectItem(_ item: ItemSource?, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
         collection?.selectItem(0, inSection: self, animated: animated, scrollPosition: scrollPosition)
     }
     
-    public func deselectItem(item: ItemSource, animated: Bool) {
+    public func deselectItem(_ item: ItemSource, animated: Bool) {
         collection?.deselectItem(0, inSection: self, animated: animated)
     }
     
-    public func layoutAttributesForItem(item: ItemSource) -> UICollectionViewLayoutAttributes? {
+    public func layoutAttributesForItem(_ item: ItemSource) -> UICollectionViewLayoutAttributes? {
         return collection?.layoutAttributesForItem(0, inSection: self)
     }
     
-    public func layoutAttributesForSupplementaryElementOfKind(kind: String, atItem item: ItemSource) -> UICollectionViewLayoutAttributes? {
+    public func layoutAttributesForSupplementaryElementOfKind(_ kind: String, atItem item: ItemSource) -> UICollectionViewLayoutAttributes? {
         return collection?.layoutAttributesForSupplementaryElementOfKind(kind, atItem: 0, inSection: self)
     }
     
-    public func cellForItem(item: ItemSource) -> UICollectionViewCell? {
+    public func cellForItem(_ item: ItemSource) -> UICollectionViewCell? {
         return collection?.cellForItem(0, inSection: self)
     }
     
-    public func scrollToItem(item: ItemSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    public func scrollToItem(_ item: ItemSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
         collection?.scrollToItem(0, inSection: self, atScrollPosition: scrollPosition, animated: animated)
     }
     
-    public func insertItem(item: ItemSource) {
+    public func insertItem(_ item: ItemSource) {
         collection?.insertItems([0], inSection: self)
     }
     
-    public func deleteItem(item: ItemSource) {
+    public func deleteItem(_ item: ItemSource) {
         collection?.deleteItems([0], inSection: self)
     }
     
-    public func reloadItem(item: ItemSource) {
+    public func reloadItem(_ item: ItemSource) {
         collection?.reloadItems([0], inSection: self)
     }
     

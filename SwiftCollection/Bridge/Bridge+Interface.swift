@@ -12,92 +12,92 @@ extension Bridge : ParentInterface {
         return collectionView ?? UICollectionView()
     }
     
-    func dequeueReusableCellWithReuseIdentifier(identifier: String, forIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell {
-        return _collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath)
+    func dequeueReusableCellWithReuseIdentifier(_ identifier: String, forIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell {
+        return _collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
     }
     
-    func dequeueReusableSupplementaryViewOfKind(elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView {
-        return _collectionView.dequeueReusableSupplementaryViewOfKind(elementKind, withReuseIdentifier: identifier, forIndexPath: indexPath)
+    func dequeueReusableSupplementaryViewOfKind(_ elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView {
+        return _collectionView.dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: identifier, for: indexPath)
     }
     
-    func indexPathsForSelectedItemsInCollection(collection: CollectionSource) -> [NSIndexPath]? {
-        return collectionView?.indexPathsForSelectedItems()
+    func indexPathsForSelectedItemsInCollection(_ collection: CollectionSource) -> [IndexPath]? {
+        return collectionView?.indexPathsForSelectedItems
     }
     
-    func selectItemAtIndexPath(indexPath: NSIndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
-       collectionView?.selectItemAtIndexPath(indexPath, animated: animated, scrollPosition: scrollPosition)
+    func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+       collectionView?.selectItem(at: indexPath, animated: animated, scrollPosition: scrollPosition)
     }
     
-    func deselectItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, animated: Bool) {
-       collectionView?.deselectItemAtIndexPath(indexPath, animated: animated)
+    func deselectItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, animated: Bool) {
+       collectionView?.deselectItem(at: indexPath, animated: animated)
     }
     
-    func numberOfSectionsInCollection(collection: CollectionSource) -> Int {
-        return _collectionView.numberOfSections()
+    func numberOfSectionsInCollection(_ collection: CollectionSource) -> Int {
+        return _collectionView.numberOfSections
     }
     
-    func numberOfItemsInSection(section: Int, inCollection collection: CollectionSource) -> Int {
-        return _collectionView.numberOfItemsInSection(section)
+    func numberOfItemsInSection(_ section: Int, inCollection collection: CollectionSource) -> Int {
+        return _collectionView.numberOfItems(inSection: section)
     }
     
-    func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes? {
-        return collectionView?.layoutAttributesForItemAtIndexPath(indexPath)
+    func layoutAttributesForItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes? {
+        return collectionView?.layoutAttributesForItem(at: indexPath)
     }
     
-    func layoutAttributesForSupplementaryElementOfKind(kind: String, atIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes? {
-        return collectionView?.layoutAttributesForSupplementaryElementOfKind(kind, atIndexPath: indexPath)
+    func layoutAttributesForSupplementaryElementOfKind(_ kind: String, atIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes? {
+        return collectionView?.layoutAttributesForSupplementaryElement(ofKind: kind, at: indexPath)
     }
     
-    func indexPathForItemAtPoint(point: CGPoint, inCollection collection: CollectionSource) -> NSIndexPath? {
-        return collectionView?.indexPathForItemAtPoint(point)
+    func indexPathForItemAtPoint(_ point: CGPoint, inCollection collection: CollectionSource) -> IndexPath? {
+        return collectionView?.indexPathForItem(at: point)
     }
     
-    func indexPathForCell(cell: UICollectionViewCell, inCollection collection: CollectionSource) -> NSIndexPath? {
-        return collectionView?.indexPathForCell(cell)
+    func indexPathForCell(_ cell: UICollectionViewCell, inCollection collection: CollectionSource) -> IndexPath? {
+        return collectionView?.indexPath(for: cell)
     }
     
-    func cellForItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell? {
-        return collectionView?.cellForItemAtIndexPath(indexPath)
+    func cellForItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell? {
+        return collectionView?.cellForItem(at: indexPath)
     }
     
-    func indexPathsForVisibleItemsInCollection(collection: CollectionSource) -> [NSIndexPath] {
-        return collectionView?.indexPathsForVisibleItems() ?? []
+    func indexPathsForVisibleItemsInCollection(_ collection: CollectionSource) -> [IndexPath] {
+        return collectionView?.indexPathsForVisibleItems ?? []
     }
     
-    func scrollToItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
-       collectionView?.scrollToItemAtIndexPath(indexPath, atScrollPosition: scrollPosition, animated: animated)
+    func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+       collectionView?.scrollToItem(at: indexPath, at: scrollPosition, animated: animated)
     }
     
-    func insertSections(sections: NSIndexSet, inCollection collection: CollectionSource) {
+    func insertSections(_ sections: IndexSet, inCollection collection: CollectionSource) {
        collectionView?.insertSections(sections)
     }
     
-    func deleteSections(sections: NSIndexSet, inCollection collection: CollectionSource) {
+    func deleteSections(_ sections: IndexSet, inCollection collection: CollectionSource) {
        collectionView?.deleteSections(sections)
     }
     
-    func reloadSections(sections: NSIndexSet, inCollection collection: CollectionSource) {
+    func reloadSections(_ sections: IndexSet, inCollection collection: CollectionSource) {
        collectionView?.reloadSections(sections)
     }
     
-    func moveSection(section: Int, toSection newSection: Int, inCollection collection: CollectionSource) {
+    func moveSection(_ section: Int, toSection newSection: Int, inCollection collection: CollectionSource) {
        collectionView?.moveSection(section, toSection: newSection)
     }
     
-    func insertItemsAtIndexPaths(indexPaths: [NSIndexPath], inCollection collection: CollectionSource) {
-       collectionView?.insertItemsAtIndexPaths(indexPaths)
+    func insertItemsAtIndexPaths(_ indexPaths: [IndexPath], inCollection collection: CollectionSource) {
+       collectionView?.insertItems(at: indexPaths)
     }
     
-    func deleteItemsAtIndexPaths(indexPaths: [NSIndexPath], inCollection collection: CollectionSource) {
-       collectionView?.deleteItemsAtIndexPaths(indexPaths)
+    func deleteItemsAtIndexPaths(_ indexPaths: [IndexPath], inCollection collection: CollectionSource) {
+       collectionView?.deleteItems(at: indexPaths)
     }
     
-    func reloadItemsAtIndexPaths(indexPaths: [NSIndexPath], inCollection collection: CollectionSource) {
-       collectionView?.reloadItemsAtIndexPaths(indexPaths)
+    func reloadItemsAtIndexPaths(_ indexPaths: [IndexPath], inCollection collection: CollectionSource) {
+       collectionView?.reloadItems(at: indexPaths)
     }
     
-    func moveItemAtIndexPath(indexPath: NSIndexPath, toIndexPath newIndexPath: NSIndexPath, inCollection collection: CollectionSource) {
-       collectionView?.moveItemAtIndexPath(indexPath, toIndexPath: newIndexPath)
+    func moveItemAtIndexPath(_ indexPath: IndexPath, toIndexPath newIndexPath: IndexPath, inCollection collection: CollectionSource) {
+       collectionView?.moveItem(at: indexPath, to: newIndexPath)
     }
     
 }

@@ -8,16 +8,16 @@
 
 public protocol SectionInterface : _Section {
     
-    func dequeueReusableCellWithReuseIdentifier(identifier: String, forItem item: ItemSource) -> UICollectionViewCell
-    func dequeueReusableSupplementaryViewOfKind(elementKind: String, withReuseIdentifier identifier: String, forItem item: ItemSource) -> UICollectionReusableView
-    func selectItem(item: ItemSource?, animated: Bool, scrollPosition: UICollectionViewScrollPosition)
-    func deselectItem(item: ItemSource, animated: Bool)
-    func layoutAttributesForItem(item: ItemSource) -> UICollectionViewLayoutAttributes?
-    func layoutAttributesForSupplementaryElementOfKind(kind: String, atItem item: ItemSource) -> UICollectionViewLayoutAttributes?
-    func cellForItem(item: ItemSource) -> UICollectionViewCell?
-    func scrollToItem(item: ItemSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
-    func insertItem(item: ItemSource)
-    func deleteItem(item: ItemSource)
-    func reloadItem(item: ItemSource)
+    func dequeueReusableCellWithReuseIdentifier(_ identifier: String, forItem item: ItemSource) -> UICollectionViewCell
+    func dequeueReusableSupplementaryViewOfKind(_ elementKind: String, withReuseIdentifier identifier: String, forItem item: ItemSource) -> UICollectionReusableView
+    func selectItem(_ item: ItemSource?, animated: Bool, scrollPosition: UICollectionViewScrollPosition)
+    func deselectItem(_ item: ItemSource, animated: Bool)
+    func layoutAttributesForItem(_ item: ItemSource) -> UICollectionViewLayoutAttributes?
+    func layoutAttributesForSupplementaryElementOfKind(_ kind: String, atItem item: ItemSource) -> UICollectionViewLayoutAttributes?
+    func cellForItem(_ item: ItemSource) -> UICollectionViewCell?
+    func scrollToItem(_ item: ItemSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
+    func insertItem(_ item: ItemSource)
+    func deleteItem(_ item: ItemSource)
+    func reloadItem(_ item: ItemSource)
     
 }

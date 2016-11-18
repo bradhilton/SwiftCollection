@@ -10,24 +10,24 @@ public protocol SectionSource : _Section {
     
     // Delegate
     
-    func shouldHighlightItem(item: Int) -> Bool
-    func didHighlightItem(item: Int)
-    func didUnhighlightItem(item: Int)
-    func shouldSelectItem(item: Int) -> Bool
-    func shouldDeselectItem(item: Int) -> Bool
-    func didSelectItem(item: Int)
-    func didDeselectItem(item: Int)
-    func willDisplayCell(cell: UICollectionViewCell, forItem item: Int)
-    func willDisplaySupplementaryView(view: UICollectionReusableView, forElementKind elementKind: String, forItem item: Int)
-    func didEndDisplayingCell(cell: UICollectionViewCell, forItem item: Int)
-    func didEndDisplayingSupplementaryView(view: UICollectionReusableView, forElementOfKind elementKind: String, forItem item: Int)
-    func shouldShowMenuForItem(item: Int) -> Bool
-    func canPerformAction(action: Selector, forItem item: Int, withSender sender: AnyObject?) -> Bool
-    func performAction(action: Selector, forItem item: Int, withSender sender: AnyObject?)
+    func shouldHighlightItem(_ item: Int) -> Bool
+    func didHighlightItem(_ item: Int)
+    func didUnhighlightItem(_ item: Int)
+    func shouldSelectItem(_ item: Int) -> Bool
+    func shouldDeselectItem(_ item: Int) -> Bool
+    func didSelectItem(_ item: Int)
+    func didDeselectItem(_ item: Int)
+    func willDisplayCell(_ cell: UICollectionViewCell, forItem item: Int)
+    func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, forItem item: Int)
+    func didEndDisplayingCell(_ cell: UICollectionViewCell, forItem item: Int)
+    func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, forItem item: Int)
+    func shouldShowMenuForItem(_ item: Int) -> Bool
+    func canPerformAction(_ action: Selector, forItem item: Int, withSender sender: Any?) -> Bool
+    func performAction(_ action: Selector, forItem item: Int, withSender sender: Any?)
     
     // Flow Layout Delegate
     
-    func sizeForItem(item: Int) -> CGSize
+    func sizeForItem(_ item: Int) -> CGSize
     var inset: UIEdgeInsets { get }
     var minimumLineSpacing: CGFloat { get }
     var minimumInteritemSpacing: CGFloat { get }
@@ -37,7 +37,7 @@ public protocol SectionSource : _Section {
     // Data Source
     
     var numberOfItems: Int { get }
-    func cellForItem(item: Int) -> UICollectionViewCell
-    func viewForSupplementaryElementOfKind(kind: String, item: Int) -> UICollectionReusableView
+    func cellForItem(_ item: Int) -> UICollectionViewCell
+    func viewForSupplementaryElementOfKind(_ kind: String, item: Int) -> UICollectionReusableView
     
 }

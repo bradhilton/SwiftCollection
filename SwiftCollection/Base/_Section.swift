@@ -16,10 +16,10 @@ extension _Section {
     
     public var collection: CollectionInterface? {
         get {
-            return getAssociatedValueForProperty("collection", ofObject: self)
+            return getAssociatedValue(key: "collection", object: self)
         }
         set {
-            setWeakAssociatedValue(newValue as? AnyObject, forProperty: "collection", ofObject: self)
+            set(weakAssociatedValue: newValue as AnyObject, key: "collection", object: self)
         }
     }
     

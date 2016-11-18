@@ -17,13 +17,13 @@ public protocol ItemSource : _Item {
     var shouldDeselect: Bool { get }
     func didSelect()
     func didDeselect()
-    func willDisplayCell(cell: UICollectionViewCell)
-    func willDisplaySupplementaryView(view: UICollectionReusableView, forElementKind elementKind: String)
-    func didEndDisplayingCell(cell: UICollectionViewCell)
-    func didEndDisplayingSupplementaryView(view: UICollectionReusableView, forElementOfKind elementKind: String)
+    func willDisplayCell(_ cell: UICollectionViewCell)
+    func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String)
+    func didEndDisplayingCell(_ cell: UICollectionViewCell)
+    func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String)
     var shouldShowMenu: Bool { get }
-    func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool
-    func performAction(action: Selector, withSender sender: AnyObject?)
+    func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool
+    func performAction(_ action: Selector, withSender sender: Any?)
     
     // Flow Layout Delegate
     
@@ -32,6 +32,6 @@ public protocol ItemSource : _Item {
     // Data Source
     
     var cell: UICollectionViewCell { get }
-    func viewForSupplementaryElementOfKind(kind: String) -> UICollectionReusableView
+    func viewForSupplementaryElementOfKind(_ kind: String) -> UICollectionReusableView
     
 }

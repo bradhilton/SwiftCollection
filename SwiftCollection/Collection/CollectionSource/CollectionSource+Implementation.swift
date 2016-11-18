@@ -10,62 +10,62 @@ extension CollectionSource {
     
     // Delegate
     
-    public func shouldHighlightItemAtIndexPath(indexPath: NSIndexPath) -> Bool { return true }
-    public func didHighlightItemAtIndexPath(indexPath: NSIndexPath) {}
-    public func didUnhighlightItemAtIndexPath(indexPath: NSIndexPath) {}
-    public func shouldSelectItemAtIndexPath(indexPath: NSIndexPath) -> Bool { return true }
-    public func shouldDeselectItemAtIndexPath(indexPath: NSIndexPath) -> Bool { return true }
-    public func didSelectItemAtIndexPath(indexPath: NSIndexPath) {}
-    public func didDeselectItemAtIndexPath(indexPath: NSIndexPath) {}
-    public func willDisplayCell(cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {}
-    public func willDisplaySupplementaryView(view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: NSIndexPath) {}
-    public func didEndDisplayingCell(cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {}
-    public func didEndDisplayingSupplementaryView(view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: NSIndexPath) {}
-    public func shouldShowMenuForItemAtIndexPath(indexPath: NSIndexPath) -> Bool { return false }
-    public func canPerformAction(action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool { return false }
-    public func performAction(action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {}
+    public func shouldHighlightItemAtIndexPath(_ indexPath: IndexPath) -> Bool { return true }
+    public func didHighlightItemAtIndexPath(_ indexPath: IndexPath) {}
+    public func didUnhighlightItemAtIndexPath(_ indexPath: IndexPath) {}
+    public func shouldSelectItemAtIndexPath(_ indexPath: IndexPath) -> Bool { return true }
+    public func shouldDeselectItemAtIndexPath(_ indexPath: IndexPath) -> Bool { return true }
+    public func didSelectItemAtIndexPath(_ indexPath: IndexPath) {}
+    public func didDeselectItemAtIndexPath(_ indexPath: IndexPath) {}
+    public func willDisplayCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath) {}
+    public func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: IndexPath) {}
+    public func didEndDisplayingCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath) {}
+    public func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: IndexPath) {}
+    public func shouldShowMenuForItemAtIndexPath(_ indexPath: IndexPath) -> Bool { return false }
+    public func canPerformAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) -> Bool { return false }
+    public func performAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) {}
     
-    public func transitionLayoutForOldLayout(fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
+    public func transitionLayoutForOldLayout(_ fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
         return UICollectionViewTransitionLayout(currentLayout: fromLayout, nextLayout: toLayout)
     }
     
     // Flow Layout Delegate
     
-    private var flowLayout: UICollectionViewFlowLayout {
+    fileprivate var flowLayout: UICollectionViewFlowLayout {
         return parent?.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
     }
     
-    public func sizeForItemAtIndexPath(indexPath: NSIndexPath) -> CGSize {
+    public func sizeForItemAtIndexPath(_ indexPath: IndexPath) -> CGSize {
         return flowLayout.itemSize
     }
     
-    public func insetForSectionAtIndex(section: Int) -> UIEdgeInsets {
+    public func insetForSectionAtIndex(_ section: Int) -> UIEdgeInsets {
         return flowLayout.sectionInset
     }
     
-    public func minimumLineSpacingForSectionAtIndex(section: Int) -> CGFloat {
+    public func minimumLineSpacingForSectionAtIndex(_ section: Int) -> CGFloat {
         return flowLayout.minimumLineSpacing
     }
     
-    public func minimumInteritemSpacingForSectionAtIndex(section: Int) -> CGFloat {
+    public func minimumInteritemSpacingForSectionAtIndex(_ section: Int) -> CGFloat {
         return flowLayout.minimumInteritemSpacing
     }
     
-    public func referenceSizeForHeaderInSection(section: Int) -> CGSize {
+    public func referenceSizeForHeaderInSection(_ section: Int) -> CGSize {
         return flowLayout.headerReferenceSize
     }
     
-    public func referenceSizeForFooterInSection(section: Int) -> CGSize {
+    public func referenceSizeForFooterInSection(_ section: Int) -> CGSize {
         return flowLayout.footerReferenceSize
     }
     
     // Data Source
     
-    public func numberOfItemsInSection(section: Int) -> Int {
+    public func numberOfItemsInSection(_ section: Int) -> Int {
         return 0
     }
     
-    public func cellForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewCell {
+    public func cellForItemAtIndexPath(_ indexPath: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
     }
     
@@ -73,7 +73,7 @@ extension CollectionSource {
         return 1
     }
     
-    public func viewForSupplementaryElementOfKind(kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+    public func viewForSupplementaryElementOfKind(_ kind: String, atIndexPath indexPath: IndexPath) -> UICollectionReusableView {
         return UICollectionReusableView()
     }
     

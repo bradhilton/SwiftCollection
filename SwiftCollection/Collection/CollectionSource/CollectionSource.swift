@@ -10,36 +10,36 @@ public protocol CollectionSource : _Collection {
     
     // Delegate
     
-    func shouldHighlightItemAtIndexPath(indexPath: NSIndexPath) -> Bool
-    func didHighlightItemAtIndexPath(indexPath: NSIndexPath)
-    func didUnhighlightItemAtIndexPath(indexPath: NSIndexPath)
-    func shouldSelectItemAtIndexPath(indexPath: NSIndexPath) -> Bool
-    func shouldDeselectItemAtIndexPath(indexPath: NSIndexPath) -> Bool
-    func didSelectItemAtIndexPath(indexPath: NSIndexPath)
-    func didDeselectItemAtIndexPath(indexPath: NSIndexPath)
-    func willDisplayCell(cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath)
-    func willDisplaySupplementaryView(view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: NSIndexPath)
-    func didEndDisplayingCell(cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath)
-    func didEndDisplayingSupplementaryView(view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: NSIndexPath)
-    func shouldShowMenuForItemAtIndexPath(indexPath: NSIndexPath) -> Bool
-    func canPerformAction(action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool
-    func performAction(action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?)
-    func transitionLayoutForOldLayout(fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout
+    func shouldHighlightItemAtIndexPath(_ indexPath: IndexPath) -> Bool
+    func didHighlightItemAtIndexPath(_ indexPath: IndexPath)
+    func didUnhighlightItemAtIndexPath(_ indexPath: IndexPath)
+    func shouldSelectItemAtIndexPath(_ indexPath: IndexPath) -> Bool
+    func shouldDeselectItemAtIndexPath(_ indexPath: IndexPath) -> Bool
+    func didSelectItemAtIndexPath(_ indexPath: IndexPath)
+    func didDeselectItemAtIndexPath(_ indexPath: IndexPath)
+    func willDisplayCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath)
+    func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: IndexPath)
+    func didEndDisplayingCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath)
+    func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: IndexPath)
+    func shouldShowMenuForItemAtIndexPath(_ indexPath: IndexPath) -> Bool
+    func canPerformAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) -> Bool
+    func performAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?)
+    func transitionLayoutForOldLayout(_ fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout
     
     // Flow Layout Delegate
     
-    func sizeForItemAtIndexPath(indexPath: NSIndexPath) -> CGSize
-    func insetForSectionAtIndex(section: Int) -> UIEdgeInsets
-    func minimumLineSpacingForSectionAtIndex(section: Int) -> CGFloat
-    func minimumInteritemSpacingForSectionAtIndex(section: Int) -> CGFloat
-    func referenceSizeForHeaderInSection(section: Int) -> CGSize
-    func referenceSizeForFooterInSection(section: Int) -> CGSize
+    func sizeForItemAtIndexPath(_ indexPath: IndexPath) -> CGSize
+    func insetForSectionAtIndex(_ section: Int) -> UIEdgeInsets
+    func minimumLineSpacingForSectionAtIndex(_ section: Int) -> CGFloat
+    func minimumInteritemSpacingForSectionAtIndex(_ section: Int) -> CGFloat
+    func referenceSizeForHeaderInSection(_ section: Int) -> CGSize
+    func referenceSizeForFooterInSection(_ section: Int) -> CGSize
     
     // Data Source
     
-    func numberOfItemsInSection(section: Int) -> Int
-    func cellForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewCell
+    func numberOfItemsInSection(_ section: Int) -> Int
+    func cellForItemAtIndexPath(_ indexPath: IndexPath) -> UICollectionViewCell
     var numberOfSections: Int { get }
-    func viewForSupplementaryElementOfKind(kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView
+    func viewForSupplementaryElementOfKind(_ kind: String, atIndexPath indexPath: IndexPath) -> UICollectionReusableView
     
 }

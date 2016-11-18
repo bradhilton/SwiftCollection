@@ -10,65 +10,65 @@ extension ItemSource where Self : SectionSource {
     
     // Delegate
     
-    public func shouldHighlightItem(item: Int) -> Bool {
+    public func shouldHighlightItem(_ item: Int) -> Bool {
         return shouldHighlight
     }
     
-    public func didHighlightItem(item: Int) {
+    public func didHighlightItem(_ item: Int) {
         didHighlight()
     }
     
-    public func didUnhighlightItem(item: Int) {
+    public func didUnhighlightItem(_ item: Int) {
         didUnhighlight()
     }
     
-    public func shouldSelectItem(item: Int) -> Bool {
+    public func shouldSelectItem(_ item: Int) -> Bool {
         return shouldSelect
     }
     
-    public func shouldDeselectItem(item: Int) -> Bool {
+    public func shouldDeselectItem(_ item: Int) -> Bool {
         return shouldDeselect
     }
     
-    public func didSelectItem(item: Int) {
+    public func didSelectItem(_ item: Int) {
         didSelect()
     }
     
-    public func didDeselectItem(item: Int) {
+    public func didDeselectItem(_ item: Int) {
         didDeselect()
     }
     
-    public func willDisplayCell(cell: UICollectionViewCell, forItem item: Int) {
+    public func willDisplayCell(_ cell: UICollectionViewCell, forItem item: Int) {
         willDisplayCell(cell)
     }
     
-    public func willDisplaySupplementaryView(view: UICollectionReusableView, forElementKind elementKind: String, forItem item: Int) {
+    public func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, forItem item: Int) {
         willDisplaySupplementaryView(view, forElementKind: elementKind)
     }
     
-    public func didEndDisplayingCell(cell: UICollectionViewCell, forItem item: Int) {
+    public func didEndDisplayingCell(_ cell: UICollectionViewCell, forItem item: Int) {
         didEndDisplayingCell(cell)
     }
     
-    public func didEndDisplayingSupplementaryView(view: UICollectionReusableView, forElementOfKind elementKind: String, forItem item: Int) {
+    public func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, forItem item: Int) {
         didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind)
     }
     
-    public func shouldShowMenuForItem(item: Int) -> Bool {
+    public func shouldShowMenuForItem(_ item: Int) -> Bool {
         return shouldShowMenu
     }
     
-    public func canPerformAction(action: Selector, forItem item: Int, withSender sender: AnyObject?) -> Bool {
+    public func canPerformAction(_ action: Selector, forItem item: Int, withSender sender: Any?) -> Bool {
         return canPerformAction(action, withSender: sender)
     }
     
-    public func performAction(action: Selector, forItem item: Int, withSender sender: AnyObject?) {
+    public func performAction(_ action: Selector, forItem item: Int, withSender sender: Any?) {
         performAction(action, withSender: sender)
     }
     
     // Flow Layout Delegate
     
-    public func sizeForItem(item: Int) -> CGSize {
+    public func sizeForItem(_ item: Int) -> CGSize {
         return size
     }
     
@@ -78,7 +78,7 @@ extension ItemSource where Self : SectionSource {
         return 1
     }
     
-    public func cellForItem(item: Int) -> UICollectionViewCell {
+    public func cellForItem(_ item: Int) -> UICollectionViewCell {
         return cell
     }
     

@@ -8,26 +8,26 @@
 
 public protocol ParentInterface : class {
     var collectionView: UICollectionView? { get }
-    func dequeueReusableCellWithReuseIdentifier(identifier: String, forIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell
-    func dequeueReusableSupplementaryViewOfKind(elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView
-    func indexPathsForSelectedItemsInCollection(collection: CollectionSource) -> [NSIndexPath]?
-    func selectItemAtIndexPath(indexPath: NSIndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition)
-    func deselectItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, animated: Bool)
-    func numberOfSectionsInCollection(collection: CollectionSource) -> Int
-    func numberOfItemsInSection(section: Int, inCollection collection: CollectionSource) -> Int
-    func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes?
-    func layoutAttributesForSupplementaryElementOfKind(kind: String, atIndexPath indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes?
-    func indexPathForItemAtPoint(point: CGPoint, inCollection collection: CollectionSource) -> NSIndexPath?
-    func indexPathForCell(cell: UICollectionViewCell, inCollection collection: CollectionSource) -> NSIndexPath?
-    func cellForItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell?
-    func indexPathsForVisibleItemsInCollection(collection: CollectionSource) -> [NSIndexPath]
-    func scrollToItemAtIndexPath(indexPath: NSIndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
-    func insertSections(sections: NSIndexSet, inCollection collection: CollectionSource)
-    func deleteSections(sections: NSIndexSet, inCollection collection: CollectionSource)
-    func reloadSections(sections: NSIndexSet, inCollection collection: CollectionSource)
-    func moveSection(section: Int, toSection newSection: Int, inCollection collection: CollectionSource)
-    func insertItemsAtIndexPaths(indexPaths: [NSIndexPath], inCollection collection: CollectionSource)
-    func deleteItemsAtIndexPaths(indexPaths: [NSIndexPath], inCollection collection: CollectionSource)
-    func reloadItemsAtIndexPaths(indexPaths: [NSIndexPath], inCollection collection: CollectionSource)
-    func moveItemAtIndexPath(indexPath: NSIndexPath, toIndexPath newIndexPath: NSIndexPath, inCollection collection: CollectionSource)
+    func dequeueReusableCellWithReuseIdentifier(_ identifier: String, forIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell
+    func dequeueReusableSupplementaryViewOfKind(_ elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView
+    func indexPathsForSelectedItemsInCollection(_ collection: CollectionSource) -> [IndexPath]?
+    func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition)
+    func deselectItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, animated: Bool)
+    func numberOfSectionsInCollection(_ collection: CollectionSource) -> Int
+    func numberOfItemsInSection(_ section: Int, inCollection collection: CollectionSource) -> Int
+    func layoutAttributesForItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes?
+    func layoutAttributesForSupplementaryElementOfKind(_ kind: String, atIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewLayoutAttributes?
+    func indexPathForItemAtPoint(_ point: CGPoint, inCollection collection: CollectionSource) -> IndexPath?
+    func indexPathForCell(_ cell: UICollectionViewCell, inCollection collection: CollectionSource) -> IndexPath?
+    func cellForItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell?
+    func indexPathsForVisibleItemsInCollection(_ collection: CollectionSource) -> [IndexPath]
+    func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
+    func insertSections(_ sections: IndexSet, inCollection collection: CollectionSource)
+    func deleteSections(_ sections: IndexSet, inCollection collection: CollectionSource)
+    func reloadSections(_ sections: IndexSet, inCollection collection: CollectionSource)
+    func moveSection(_ section: Int, toSection newSection: Int, inCollection collection: CollectionSource)
+    func insertItemsAtIndexPaths(_ indexPaths: [IndexPath], inCollection collection: CollectionSource)
+    func deleteItemsAtIndexPaths(_ indexPaths: [IndexPath], inCollection collection: CollectionSource)
+    func reloadItemsAtIndexPaths(_ indexPaths: [IndexPath], inCollection collection: CollectionSource)
+    func moveItemAtIndexPath(_ indexPath: IndexPath, toIndexPath newIndexPath: IndexPath, inCollection collection: CollectionSource)
 }

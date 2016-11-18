@@ -10,99 +10,99 @@ extension MultiCollection {
     
     // Delegate
     
-    public func shouldHighlightItemAtIndexPath(indexPath: NSIndexPath) -> Bool {
+    public func shouldHighlightItemAtIndexPath(_ indexPath: IndexPath) -> Bool {
         return delegate(indexPath) { $0.shouldHighlightItemAtIndexPath($1) } ?? true
     }
     
-    public func didHighlightItemAtIndexPath(indexPath: NSIndexPath) {
+    public func didHighlightItemAtIndexPath(_ indexPath: IndexPath) {
         delegate(indexPath) { $0.didHighlightItemAtIndexPath($1) }
     }
     
-    public func didUnhighlightItemAtIndexPath(indexPath: NSIndexPath) {
+    public func didUnhighlightItemAtIndexPath(_ indexPath: IndexPath) {
         delegate(indexPath) { $0.didUnhighlightItemAtIndexPath($1) }
     }
     
-    public func shouldSelectItemAtIndexPath(indexPath: NSIndexPath) -> Bool {
+    public func shouldSelectItemAtIndexPath(_ indexPath: IndexPath) -> Bool {
         return delegate(indexPath) { $0.shouldSelectItemAtIndexPath($1) } ?? true
     }
     
-    public func shouldDeselectItemAtIndexPath(indexPath: NSIndexPath) -> Bool {
+    public func shouldDeselectItemAtIndexPath(_ indexPath: IndexPath) -> Bool {
         return delegate(indexPath) { $0.shouldDeselectItemAtIndexPath($1) } ?? true
     }
     
-    public func didSelectItemAtIndexPath(indexPath: NSIndexPath) {
+    public func didSelectItemAtIndexPath(_ indexPath: IndexPath) {
         delegate(indexPath) { $0.didSelectItemAtIndexPath($1) }
     }
     
-    public func didDeselectItemAtIndexPath(indexPath: NSIndexPath) {
+    public func didDeselectItemAtIndexPath(_ indexPath: IndexPath) {
         delegate(indexPath) { $0.didDeselectItemAtIndexPath($1) }
     }
     
-    public func willDisplayCell(cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+    public func willDisplayCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath) {
         delegate(indexPath) { $0.willDisplayCell(cell, forItemAtIndexPath: $1) }
     }
     
-    public func willDisplaySupplementaryView(view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: NSIndexPath) {
+    public func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: IndexPath) {
         delegate(indexPath) { $0.willDisplaySupplementaryView(view, forElementKind: elementKind, atIndexPath: $1) }
     }
     
-    public func didEndDisplayingCell(cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+    public func didEndDisplayingCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath) {
         delegate(indexPath) { $0.didEndDisplayingCell(cell, forItemAtIndexPath: $1) }
     }
     
-    public func didEndDisplayingSupplementaryView(view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: NSIndexPath) {
+    public func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: IndexPath) {
         delegate(indexPath) { $0.didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind, atIndexPath: $1) }
     }
     
-    public func shouldShowMenuForItemAtIndexPath(indexPath: NSIndexPath) -> Bool {
+    public func shouldShowMenuForItemAtIndexPath(_ indexPath: IndexPath) -> Bool {
         return delegate(indexPath) { $0.shouldShowMenuForItemAtIndexPath($1) } ?? false
     }
     
-    public func canPerformAction(action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
+    public func canPerformAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) -> Bool {
         return delegate(indexPath) { $0.canPerformAction(action, forItemAtIndexPath: $1, withSender: sender) } ?? false
     }
     
-    public func performAction(action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
+    public func performAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) {
         delegate(indexPath) { $0.performAction(action, forItemAtIndexPath: $1, withSender: sender) }
     }
     
     // Flow Layout Delegate
     
-    private var flowLayout: UICollectionViewFlowLayout {
+    fileprivate var flowLayout: UICollectionViewFlowLayout {
         return parent?.collectionView?.collectionViewLayout as? UICollectionViewFlowLayout ?? UICollectionViewFlowLayout()
     }
     
-    public func sizeForItemAtIndexPath(indexPath: NSIndexPath) -> CGSize {
+    public func sizeForItemAtIndexPath(_ indexPath: IndexPath) -> CGSize {
         return delegate(indexPath) { $0.sizeForItemAtIndexPath($1) } ?? flowLayout.itemSize
     }
     
-    public func insetForSectionAtIndex(section: Int) -> UIEdgeInsets {
+    public func insetForSectionAtIndex(_ section: Int) -> UIEdgeInsets {
         return delegate(section) { $0.insetForSectionAtIndex($1) } ?? flowLayout.sectionInset
     }
     
-    public func minimumLineSpacingForSectionAtIndex(section: Int) -> CGFloat {
+    public func minimumLineSpacingForSectionAtIndex(_ section: Int) -> CGFloat {
         return delegate(section) { $0.minimumLineSpacingForSectionAtIndex($1) } ?? flowLayout.minimumLineSpacing
     }
     
-    public func minimumInteritemSpacingForSectionAtIndex(section: Int) -> CGFloat {
+    public func minimumInteritemSpacingForSectionAtIndex(_ section: Int) -> CGFloat {
         return delegate(section) { $0.minimumInteritemSpacingForSectionAtIndex($1) } ?? flowLayout.minimumInteritemSpacing
     }
     
-    public func referenceSizeForHeaderInSection(section: Int) -> CGSize {
+    public func referenceSizeForHeaderInSection(_ section: Int) -> CGSize {
         return delegate(section) { $0.referenceSizeForHeaderInSection($1) } ?? flowLayout.headerReferenceSize
     }
     
-    public func referenceSizeForFooterInSection(section: Int) -> CGSize {
+    public func referenceSizeForFooterInSection(_ section: Int) -> CGSize {
         return delegate(section) { $0.referenceSizeForFooterInSection($1) } ?? flowLayout.headerReferenceSize
     }
     
     // Data Source
     
-    public func numberOfItemsInSection(section: Int) -> Int {
+    public func numberOfItemsInSection(_ section: Int) -> Int {
         return delegate(section) { $0.numberOfItemsInSection($1) } ?? 0
     }
     
-    public func cellForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewCell {
+    public func cellForItemAtIndexPath(_ indexPath: IndexPath) -> UICollectionViewCell {
         return delegate(indexPath) { $0.cellForItemAtIndexPath($1) } ?? UICollectionViewCell()
     }
     
@@ -110,7 +110,7 @@ extension MultiCollection {
         return collections.reduce(0) { $0 + $1.numberOfSections }
     }
     
-    public func viewForSupplementaryElementOfKind(kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+    public func viewForSupplementaryElementOfKind(_ kind: String, atIndexPath indexPath: IndexPath) -> UICollectionReusableView {
         return delegate(indexPath) { $0.viewForSupplementaryElementOfKind(kind, atIndexPath: $1) } ?? UICollectionReusableView()
     }
     

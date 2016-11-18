@@ -12,11 +12,11 @@ extension UICollectionView {
     
     public weak var collection: CollectionSource? {
         get {
-            guard let bridge: Bridge = getAssociatedValueForProperty("collection", ofObject: self) else { return nil }
+            guard let bridge: Bridge = getAssociatedValue(key: "collection", object: self) else { return nil }
             return bridge.collection
         }
         set {
-            setAssociatedValue(Bridge(collectionView: self, collection: newValue), forProperty: "collection", ofObject: self)
+            set(associatedValue: Bridge(collectionView: self, collection: newValue), key: "collection", object: self)
         }
     }
     

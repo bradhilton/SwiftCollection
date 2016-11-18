@@ -17,20 +17,20 @@ extension ItemSection {
     
     public var items: OrderedObjectSet<ItemSource> {
         get {
-            return getAssociatedValueForProperty("items", ofObject: self, withInitialValue: OrderedObjectSet())
+            return getAssociatedValue(key: "items", object: self, initialValue: OrderedObjectSet())
         }
         set {
-            items.subtract(newValue).forEach { $0.section = nil }
-            newValue.subtract(items).forEach { $0.section = self }
-            setAssociatedValue(newValue, forProperty: "items", ofObject: self)
+            items.subtracting(newValue).forEach { $0.section = nil }
+            newValue.subtracting(items).forEach { $0.section = self }
+            set(associatedValue: newValue, key: "items", object: self)
         }
     }
     
-    func index(item: ItemSource?) -> Int? {
-        return items.indexOf { $0 === item }
+    func index(_ item: ItemSource?) -> Int? {
+        return items.index { $0 === item }
     }
     
-    func delegate<T>(item: ItemSource, handler: (Int) -> T?) -> T? {
+    func delegate<T>(_ item: ItemSource, handler: (Int) -> T?) -> T? {
         guard let index = index(item) else { return nil }
         return handler(index)
     }
