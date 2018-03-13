@@ -54,18 +54,6 @@ extension ItemSection {
         items[item].didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind)
     }
     
-    public func shouldShowMenuForItem(_ item: Int) -> Bool {
-        return items[item].shouldShowMenu
-    }
-    
-    public func canPerformAction(_ action: Selector, forItem item: Int, withSender sender: Any?) -> Bool {
-        return items[item].canPerformAction(action, withSender: sender)
-    }
-    
-    public func performAction(_ action: Selector, forItem item: Int, withSender sender: Any?) {
-        return items[item].performAction(action, withSender: sender)
-    }
-    
     // Flow Layout Delegate
     
     public func sizeForItem(_ item: Int) -> CGSize {

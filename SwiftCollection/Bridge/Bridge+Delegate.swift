@@ -52,18 +52,6 @@ extension Bridge : UICollectionViewDelegate {
         collection?.didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind, atIndexPath: indexPath)
     }
     
-    func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return _collection.shouldShowMenuForItemAtIndexPath(indexPath)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return _collection.canPerformAction(action, forItemAtIndexPath: indexPath, withSender: sender)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-        collection?.performAction(action, forItemAtIndexPath: indexPath, withSender: sender)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
         return _collection.transitionLayoutForOldLayout(fromLayout, newLayout: toLayout)
     }

@@ -21,9 +21,6 @@ public protocol SectionSource : _Section {
     func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, forItem item: Int)
     func didEndDisplayingCell(_ cell: UICollectionViewCell, forItem item: Int)
     func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, forItem item: Int)
-    func shouldShowMenuForItem(_ item: Int) -> Bool
-    func canPerformAction(_ action: Selector, forItem item: Int, withSender sender: Any?) -> Bool
-    func performAction(_ action: Selector, forItem item: Int, withSender sender: Any?)
     
     // Flow Layout Delegate
     

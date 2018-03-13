@@ -54,18 +54,6 @@ extension SectionCollection {
         sections[indexPath.section].didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind, forItem: indexPath.item)
     }
     
-    public func shouldShowMenuForItemAtIndexPath(_ indexPath: IndexPath) -> Bool {
-        return sections[indexPath.section].shouldShowMenuForItem(indexPath.item)
-    }
-    
-    public func canPerformAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return sections[indexPath.section].canPerformAction(action, forItem: indexPath.item, withSender: sender)
-    }
-    
-    public func performAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) {
-        sections[indexPath.section].performAction(action, forItem: indexPath.item, withSender: sender)
-    }
-    
     // Flow Layout Delegate
     
     public func sizeForItemAtIndexPath(_ indexPath: IndexPath) -> CGSize {

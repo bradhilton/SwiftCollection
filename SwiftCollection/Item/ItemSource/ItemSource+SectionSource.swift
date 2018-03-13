@@ -54,18 +54,6 @@ extension ItemSource where Self : SectionSource {
         didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind)
     }
     
-    public func shouldShowMenuForItem(_ item: Int) -> Bool {
-        return shouldShowMenu
-    }
-    
-    public func canPerformAction(_ action: Selector, forItem item: Int, withSender sender: Any?) -> Bool {
-        return canPerformAction(action, withSender: sender)
-    }
-    
-    public func performAction(_ action: Selector, forItem item: Int, withSender sender: Any?) {
-        performAction(action, withSender: sender)
-    }
-    
     // Flow Layout Delegate
     
     public func sizeForItem(_ item: Int) -> CGSize {

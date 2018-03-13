@@ -49,18 +49,6 @@ extension ItemSource {
     public func didEndDisplayingCell(_ cell: UICollectionViewCell) {}
     public func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String) {}
     
-    public var shouldShowMenu: Bool {
-        get {
-            return getAssociatedValue(key: "shouldShowMenu", object: self) ?? false
-        }
-        set {
-            set(associatedValue: newValue, key: "shouldShowMenu", object: self)
-        }
-    }
-    
-    public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool { return false }
-    public func performAction(_ action: Selector, withSender sender: Any?) {}
-    
     // Flow Layout Delegate
     
     fileprivate var flowLayout: UICollectionViewFlowLayout {

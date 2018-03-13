@@ -21,9 +21,6 @@ public protocol CollectionSource : _Collection {
     func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, atIndexPath indexPath: IndexPath)
     func didEndDisplayingCell(_ cell: UICollectionViewCell, forItemAtIndexPath indexPath: IndexPath)
     func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, atIndexPath indexPath: IndexPath)
-    func shouldShowMenuForItemAtIndexPath(_ indexPath: IndexPath) -> Bool
-    func canPerformAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) -> Bool
-    func performAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?)
     func transitionLayoutForOldLayout(_ fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout
     
     // Flow Layout Delegate

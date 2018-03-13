@@ -54,18 +54,6 @@ extension MultiCollection {
         delegate(indexPath) { $0.didEndDisplayingSupplementaryView(view, forElementOfKind: elementKind, atIndexPath: $1) }
     }
     
-    public func shouldShowMenuForItemAtIndexPath(_ indexPath: IndexPath) -> Bool {
-        return delegate(indexPath) { $0.shouldShowMenuForItemAtIndexPath($1) } ?? false
-    }
-    
-    public func canPerformAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return delegate(indexPath) { $0.canPerformAction(action, forItemAtIndexPath: $1, withSender: sender) } ?? false
-    }
-    
-    public func performAction(_ action: Selector, forItemAtIndexPath indexPath: IndexPath, withSender sender: Any?) {
-        delegate(indexPath) { $0.performAction(action, forItemAtIndexPath: $1, withSender: sender) }
-    }
-    
     // Flow Layout Delegate
     
     fileprivate var flowLayout: UICollectionViewFlowLayout {

@@ -23,9 +23,6 @@ extension SectionSource {
     public func willDisplaySupplementaryView(_ view: UICollectionReusableView, forElementKind elementKind: String, forItem item: Int) {}
     public func didEndDisplayingCell(_ cell: UICollectionViewCell, forItem item: Int) {}
     public func didEndDisplayingSupplementaryView(_ view: UICollectionReusableView, forElementOfKind elementKind: String, forItem item: Int) {}
-    public func shouldShowMenuForItem(_ item: Int) -> Bool { return false }
-    public func canPerformAction(_ action: Selector, forItem item: Int, withSender sender: Any?) -> Bool { return false }
-    public func performAction(_ action: Selector, forItem item: Int, withSender sender: Any?) {}
     
     // Flow Layout Delegate
     
