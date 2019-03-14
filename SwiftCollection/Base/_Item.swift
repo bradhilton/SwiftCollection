@@ -14,7 +14,7 @@ class EmptySection : ItemSection {
 }
 
 public protocol _Item : class {
-    weak var section: SectionInterface? { get set }
+    var section: SectionInterface? { get set }
 }
 
 extension _Item {

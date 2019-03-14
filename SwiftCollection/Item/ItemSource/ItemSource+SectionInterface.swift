@@ -30,7 +30,7 @@ extension ItemSource where Self : SectionSource, Self : SectionInterface {
         return _collection.dequeueReusableSupplementaryViewOfKind(elementKind, withReuseIdentifier: identifier, forItem: 0, inSection: self)
     }
     
-    public func selectItem(_ item: ItemSource?, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+    public func selectItem(_ item: ItemSource?, animated: Bool, scrollPosition: UICollectionView.ScrollPosition) {
         collection?.selectItem(0, inSection: self, animated: animated, scrollPosition: scrollPosition)
     }
     
@@ -50,7 +50,7 @@ extension ItemSource where Self : SectionSource, Self : SectionInterface {
         return collection?.cellForItem(0, inSection: self)
     }
     
-    public func scrollToItem(_ item: ItemSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    public func scrollToItem(_ item: ItemSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
         collection?.scrollToItem(0, inSection: self, atScrollPosition: scrollPosition, animated: animated)
     }
     

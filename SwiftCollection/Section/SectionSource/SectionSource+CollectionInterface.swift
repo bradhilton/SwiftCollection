@@ -34,7 +34,7 @@ extension SectionSource where Self : CollectionSource, Self : CollectionInterfac
         return parent?.indexPathsForSelectedItemsInCollection(self)?.map { $0.item }
     }
     
-    public func selectItem(_ item: Int?, inSection section: SectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+    public func selectItem(_ item: Int?, inSection section: SectionSource, animated: Bool, scrollPosition: UICollectionView.ScrollPosition) {
         parent?.selectItemAtIndexPath(IndexPath(item: item), inCollection: self, animated: animated, scrollPosition: scrollPosition)
     }
     
@@ -70,7 +70,7 @@ extension SectionSource where Self : CollectionSource, Self : CollectionInterfac
         return _parent.indexPathsForVisibleItemsInCollection(self).map { $0.item }
     }
     
-    public func scrollToItem(_ item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    public func scrollToItem(_ item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
         parent?.scrollToItemAtIndexPath(IndexPath(item: item), inCollection: self, atScrollPosition: scrollPosition, animated: animated)
     }
     

@@ -11,7 +11,7 @@ public protocol ParentInterface : class {
     func dequeueReusableCellWithReuseIdentifier(_ identifier: String, forIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell
     func dequeueReusableSupplementaryViewOfKind(_ elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionReusableView
     func indexPathsForSelectedItemsInCollection(_ collection: CollectionSource) -> [IndexPath]?
-    func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition)
+    func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionView.ScrollPosition)
     func deselectItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, animated: Bool)
     func numberOfSectionsInCollection(_ collection: CollectionSource) -> Int
     func numberOfItemsInSection(_ section: Int, inCollection collection: CollectionSource) -> Int
@@ -21,7 +21,7 @@ public protocol ParentInterface : class {
     func indexPathForCell(_ cell: UICollectionViewCell, inCollection collection: CollectionSource) -> IndexPath?
     func cellForItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource) -> UICollectionViewCell?
     func indexPathsForVisibleItemsInCollection(_ collection: CollectionSource) -> [IndexPath]
-    func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
+    func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool)
     func insertSections(_ sections: IndexSet, inCollection collection: CollectionSource)
     func deleteSections(_ sections: IndexSet, inCollection collection: CollectionSource)
     func reloadSections(_ sections: IndexSet, inCollection collection: CollectionSource)

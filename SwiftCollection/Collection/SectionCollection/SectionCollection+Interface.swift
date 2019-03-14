@@ -20,7 +20,7 @@ extension SectionCollection {
         return itemsForSection(section, fromIndexPaths: parent?.indexPathsForSelectedItemsInCollection(self))
     }
     
-    public func selectItem(_ item: Int?, inSection section: SectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+    public func selectItem(_ item: Int?, inSection section: SectionSource, animated: Bool, scrollPosition: UICollectionView.ScrollPosition) {
         delegate(section) { self.parent?.selectItemAtIndexPath(IndexPath(item: item, section: $0), inCollection: self, animated: animated, scrollPosition: scrollPosition) }
     }
     
@@ -56,7 +56,7 @@ extension SectionCollection {
         return itemsForSection(section, fromIndexPaths: parent?.indexPathsForVisibleItemsInCollection(self)) ?? []
     }
     
-    public func scrollToItem(_ item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    public func scrollToItem(_ item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
         delegate(section) { self.parent?.scrollToItemAtIndexPath(IndexPath(item: item, section: $0), inCollection: self, atScrollPosition: scrollPosition, animated: animated) }
     }
     

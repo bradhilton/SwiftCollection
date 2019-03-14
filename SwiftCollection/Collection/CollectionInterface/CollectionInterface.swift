@@ -11,7 +11,7 @@ public protocol CollectionInterface : _Collection {
     func dequeueReusableCellWithReuseIdentifier(_ identifier: String, forItem item: Int, inSection section: SectionSource) -> UICollectionViewCell
     func dequeueReusableSupplementaryViewOfKind(_ elementKind: String, withReuseIdentifier identifier: String, forItem item: Int, inSection section: SectionSource) -> UICollectionReusableView
     func selectedItemsInSection(_ section: SectionSource) -> [Int]?
-    func selectItem(_ item: Int?, inSection section: SectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition)
+    func selectItem(_ item: Int?, inSection section: SectionSource, animated: Bool, scrollPosition: UICollectionView.ScrollPosition)
     func deselectItem(_ item: Int, inSection section: SectionSource, animated: Bool)
     func numberOfItemsInSection(_ section: SectionSource) -> Int
     func layoutAttributesForItem(_ item: Int, inSection section: SectionSource) -> UICollectionViewLayoutAttributes?
@@ -20,7 +20,7 @@ public protocol CollectionInterface : _Collection {
     func itemForCell(_ cell: UICollectionViewCell, inSection section: SectionSource) -> Int?
     func cellForItem(_ item: Int, inSection section: SectionSource) -> UICollectionViewCell?
     func visibleItemsInSection(_ section: SectionSource) -> [Int]
-    func scrollToItem(_ item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool)
+    func scrollToItem(_ item: Int, inSection section: SectionSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool)
     func insertSection(_ section: SectionSource)
     func deleteSection(_ section: SectionSource)
     func reloadSection(_ section: SectionSource)

@@ -9,7 +9,7 @@
 import AssociatedValues
 
 public protocol _Section : class {
-    weak var collection: CollectionInterface? { get set }
+    var collection: CollectionInterface? { get set }
 }
 
 extension _Section {

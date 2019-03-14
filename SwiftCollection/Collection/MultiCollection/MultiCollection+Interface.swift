@@ -24,7 +24,7 @@ extension MultiCollection {
         return indexPathsForCollection(collection, indexPaths: parent?.indexPathsForSelectedItemsInCollection(self))
     }
     
-    public func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+    public func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionView.ScrollPosition) {
         parent?.selectItemAtIndexPath(optionalIndexPathFromCollection(collection, indexPath: indexPath), inCollection: self, animated: animated, scrollPosition: scrollPosition)
     }
     
@@ -64,7 +64,7 @@ extension MultiCollection {
         return indexPathsForCollection(collection, indexPaths: parent?.indexPathsForVisibleItemsInCollection(self)) ?? []
     }
     
-    public func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    public func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
         parent?.scrollToItemAtIndexPath(indexPathFromCollection(collection, indexPath: indexPath), inCollection: self, atScrollPosition: scrollPosition, animated: animated)
     }
     

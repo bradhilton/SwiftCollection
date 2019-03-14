@@ -9,7 +9,7 @@
 import AssociatedValues
 
 public protocol _Collection : class {
-    weak var parent: ParentInterface? { get set }
+    var parent: ParentInterface? { get set }
 }
 
 extension _Collection {

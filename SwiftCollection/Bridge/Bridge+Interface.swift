@@ -24,7 +24,7 @@ extension Bridge : ParentInterface {
         return collectionView?.indexPathsForSelectedItems
     }
     
-    func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionViewScrollPosition) {
+    func selectItemAtIndexPath(_ indexPath: IndexPath?, inCollection collection: CollectionSource, animated: Bool, scrollPosition: UICollectionView.ScrollPosition) {
        collectionView?.selectItem(at: indexPath, animated: animated, scrollPosition: scrollPosition)
     }
     
@@ -64,7 +64,7 @@ extension Bridge : ParentInterface {
         return collectionView?.indexPathsForVisibleItems ?? []
     }
     
-    func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    func scrollToItemAtIndexPath(_ indexPath: IndexPath, inCollection collection: CollectionSource, atScrollPosition scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
        collectionView?.scrollToItem(at: indexPath, at: scrollPosition, animated: animated)
     }
     

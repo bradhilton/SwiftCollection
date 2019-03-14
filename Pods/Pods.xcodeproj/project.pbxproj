@@ -49,33 +49,33 @@
 		153A731A5C6E1F61159C86667B4AA3A7 /* AssociatedValues-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssociatedValues-prefix.pch"; sourceTree = "<group>"; };
 		1C8AF19DB2AEE59DF3BD67F41CB7B366 /* Pods-SwiftCollection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftCollection-umbrella.h"; sourceTree = "<group>"; };
 		22E09B4FF9FC8A41215BF8C8221ADBCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23059F9BBA2188BD848708DBA27CDEEA /* AssociatedValues.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AssociatedValues.modulemap; sourceTree = "<group>"; };
+		23059F9BBA2188BD848708DBA27CDEEA /* AssociatedValues.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AssociatedValues.modulemap; sourceTree = "<group>"; };
 		2B96D03C227E93B5D54AD78E4C3E821D /* Pods-SwiftCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		2D6EB88153267D2B4429CB18CE5A30E5 /* AssociatedValues-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssociatedValues-umbrella.h"; sourceTree = "<group>"; };
 		3093136E93450CC56E7C6154629001D8 /* Pods-SwiftCollection-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCollection-acknowledgements.plist"; sourceTree = "<group>"; };
-		309D669D5D737ABBB4674D89DE2AF75A /* OrderedObjectSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OrderedObjectSet.framework; path = OrderedObjectSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		309D669D5D737ABBB4674D89DE2AF75A /* OrderedObjectSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedObjectSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		317F573B0477AA176295249E73D7340E /* OrderedObjectSet+CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OrderedObjectSet+CustomStringConvertible.swift"; path = "Sources/OrderedObjectSet+CustomStringConvertible.swift"; sourceTree = "<group>"; };
 		324B20114DF0B65F57946A2A86588F14 /* OrderedObjectSet+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OrderedObjectSet+Array.swift"; path = "Sources/OrderedObjectSet+Array.swift"; sourceTree = "<group>"; };
-		352E4DBE25CE6158028D3EEB2061EE4B /* OrderedObjectSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OrderedObjectSet.modulemap; sourceTree = "<group>"; };
+		352E4DBE25CE6158028D3EEB2061EE4B /* OrderedObjectSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OrderedObjectSet.modulemap; sourceTree = "<group>"; };
 		37A96D983A06EF248D4DDFEC0023470B /* OrderedObjectSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedObjectSet.swift; path = Sources/OrderedObjectSet.swift; sourceTree = "<group>"; };
 		44A343D8C81B6192BC7EA315EB98637D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		759A0506AA2979EBF8F67B6C3D20C461 /* Pods-SwiftCollection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCollection-dummy.m"; sourceTree = "<group>"; };
-		7D4573B10B2885D909BB03187A200116 /* AssociatedValues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AssociatedValues.framework; path = AssociatedValues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4573B10B2885D909BB03187A200116 /* AssociatedValues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AssociatedValues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800EAB37B2FA72E04F0FD2C7C1AEF727 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Functions.swift; sourceTree = "<group>"; };
 		8AF07FAD6AE93B84BC2A678EA272F05D /* Pods-SwiftCollection-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCollection-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94011D0FBA7C2FBE4015860E1C12EFA3 /* AssociatedValues-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AssociatedValues-dummy.m"; sourceTree = "<group>"; };
 		948DD10A9D446150ED2A763ABEC9B364 /* OrderedObjectSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OrderedObjectSet-prefix.pch"; sourceTree = "<group>"; };
 		953884AC59CC568B630AE72BE9E2E899 /* Pods-SwiftCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCollection.release.xcconfig"; sourceTree = "<group>"; };
-		9BC037E84B4891387CD098BECE7B6C52 /* Pods-SwiftCollection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftCollection.modulemap"; sourceTree = "<group>"; };
+		9BC037E84B4891387CD098BECE7B6C52 /* Pods-SwiftCollection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftCollection.modulemap"; sourceTree = "<group>"; };
 		9ED1E374A365EA80DB3AC5BA8497F9E2 /* OrderedObjectSet+Set.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OrderedObjectSet+Set.swift"; path = "Sources/OrderedObjectSet+Set.swift"; sourceTree = "<group>"; };
 		9ED64409CC89F5D8BC9A89FFB659B34B /* OrderedObjectSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OrderedObjectSet.xcconfig; sourceTree = "<group>"; };
 		A5F108AA902589F60D0342E5D15D7EF6 /* AssociatedValues.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AssociatedValues.h; path = AssociatedValues/AssociatedValues.h; sourceTree = "<group>"; };
 		AA232C91A0203ACA28FFEB9F34E68E91 /* ObjectWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectWrapper.swift; path = Sources/ObjectWrapper.swift; sourceTree = "<group>"; };
 		B5DCF2E081B6CCE65D144AB67974FE96 /* Pods-SwiftCollection-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCollection-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B67D7A5C4FA0A4C8F61B92439274B489 /* AssociatedValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedValues.swift; path = AssociatedValues/AssociatedValues.swift; sourceTree = "<group>"; };
-		CF97E54EA5D1259C7F254374E06FB4C5 /* Pods_SwiftCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCollection.framework; path = "Pods-SwiftCollection.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF97E54EA5D1259C7F254374E06FB4C5 /* Pods_SwiftCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AFC9BF635D28FB3A1DA02ABCBB87D6 /* OrderedObjectSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OrderedObjectSet-umbrella.h"; sourceTree = "<group>"; };
 		D6326BE5A275525DDA4F5E03EA1D3E0A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD34362671562F0709F06F4F594009F /* OrderedObjectSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OrderedObjectSet.h; path = Sources/OrderedObjectSet.h; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 				B67D7A5C4FA0A4C8F61B92439274B489 /* AssociatedValues.swift */,
 				B9F96F9AFA025F80F275B5172E2950CF /* Support Files */,
 			);
-			name = AssociatedValues;
 			path = AssociatedValues;
 			sourceTree = "<group>";
 		};
@@ -201,7 +200,6 @@
 				9ED1E374A365EA80DB3AC5BA8497F9E2 /* OrderedObjectSet+Set.swift */,
 				DF4754FBCBD0FB521DB1DA41B89A0312 /* Support Files */,
 			);
-			name = OrderedObjectSet;
 			path = OrderedObjectSet;
 			sourceTree = "<group>";
 		};
@@ -328,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -541,6 +539,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -548,6 +547,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -662,6 +662,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -669,6 +670,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
